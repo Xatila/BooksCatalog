@@ -44,7 +44,7 @@ namespace DbTest
             table.Columns.Add("Title", typeof(string));
             table.Columns.Add("Description", typeof(string));
 
-            string conString = "server=localhost;uid=root;pwd=12qwas123;database=books;";
+            string conString = "server=localhost;uid=root;pwd=myPass123;database=books;";
 
             MySqlConnection con = new MySqlConnection();
             con.ConnectionString = conString;
@@ -88,7 +88,7 @@ namespace DbTest
             try
             {
 
-                string conString = "server=localhost;uid=root;pwd=12qwas123;database=books;";
+                string conString = "server=localhost;uid=root;pwd=myPass123;database=books;";
 
                 MySqlConnection con = new MySqlConnection();
                 con.ConnectionString = conString;

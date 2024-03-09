@@ -8,7 +8,7 @@ namespace DbTest
 {
     class CRUD
     {
-        private string conString = "server=localhost;uid=root;pwd=12qwas123;database=books;";
+        private string conString = "server=localhost;uid=root;pwd=myPass123;database=books;";
         public void Insert(ref Book book)
         {
             MySqlConnection conn = new MySqlConnection(conString);
