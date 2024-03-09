@@ -8,9 +8,7 @@ namespace DbTest
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        //Стартиране на проекта
         [STAThread]
         static void Main()
         {
