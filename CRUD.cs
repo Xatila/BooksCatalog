@@ -8,13 +8,16 @@ namespace DbTest
 {
     class CRUD
     {
+        // Създаваме стринг променлива за настройките към базата данни.
         private string conString = "server=localhost;uid=root;pwd=myPass123;database=books;";
         public void Insert(ref Book book)
         {
             MySqlConnection conn = new MySqlConnection(conString);
             {
+                // Отваряме връзката.
                 conn.Open();
-
+                
+                // Заявка за вмъкване на запис (книга).
                 string sqlQuery = "INSERT INTO bookinfo (ID, Title, Description) VALUES (@ID, @Title, @Description)";
                 MySqlCommand cmd = new MySqlCommand(sqlQuery, conn);
                 {
@@ -27,7 +30,7 @@ namespace DbTest
                 }
             }
         }
-
+        // Заявка за изтриване дадена книга (запис).
         public void Delete(Book book)
         {
             MySqlConnection conn = new MySqlConnection(conString);
@@ -43,7 +46,7 @@ namespace DbTest
                 }
             }
         }
-
+        // Заявка за редактиране на дадена книга (запис).
         public void Update(Book book)
         {
             MySqlConnection conn = new MySqlConnection(conString);
@@ -62,7 +65,7 @@ namespace DbTest
             }
         }
 
-
+// Прочитане на таблицата.
         public Book GetByID(int ID)
         {
             MySqlConnection conn = new MySqlConnection(conString);
@@ -96,7 +99,7 @@ namespace DbTest
 
             return book;
         }
-
+// Валидираме, че няма да се получат грешки в id-тата на книгите след CRUD опреациите.
         public int GetNextID()
         {
             MySqlConnection conn = new MySqlConnection(conString);
