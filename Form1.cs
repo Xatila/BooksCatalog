@@ -20,7 +20,7 @@ namespace DbTest
             InitializeComponent();
         }
 
-
+//При кликване на бутон създава нова книга и я визуализира.
         private void btnSave_Click(object sender, EventArgs e)
         {
            
@@ -31,6 +31,7 @@ namespace DbTest
         
             getBooks();
         }
+        // Визуализира всички записи в базата като създава връзка и прочита всички записи, чрез MySQL заявка.
         public void getBooks()
         {
             DataTable table = new DataTable();
@@ -65,7 +66,7 @@ namespace DbTest
         {
             IDBook = 0;
         }
-
+    // Изтрива избрана книга.
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (IDBook != 0)
@@ -82,7 +83,7 @@ namespace DbTest
                 getBooks();
             }
         }
-
+// При зареждането на проекта се визуализра всичко от базата.
         private void Form1_Load(object sender, EventArgs e)
         {
             try
@@ -107,6 +108,7 @@ namespace DbTest
                 }
                 dataGridViewBooks.DataSource = table;
             }
+            // Ако има грешка при MySql заявката се улавя и се показва в прозорец.
             catch (MySqlException ex)
             {
                 MessageBox.Show(ex.ToString());
@@ -134,7 +136,7 @@ namespace DbTest
             {
                 IDBook = 0;
 
-                if (e.RowIndex >= 0) // Verifica si se hizo clic en una celda válida (no en los encabezados)
+                if (e.RowIndex >= 0) // Валидира, че има поне 1 книга.
                 {
                     DataGridViewRow selectedRow = dataGridViewBooks.Rows[e.RowIndex];
                     IDBook = Convert.ToInt32(selectedRow.Cells[0].Value);
@@ -149,7 +151,7 @@ namespace DbTest
             }
             catch { }
         }
-
+// Редактира книга.
         private void saveEdit_Click(object sender, EventArgs e)
         {
             if (IDBook != 0)
