@@ -1,0 +1,123 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|DbTest.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|DbTest.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|DbTest.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|DbTest.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|solutionrelative:form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|solutionrelative:book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|solutionrelative:crud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|c:\\users\\valentina\\source\\repos\\xatila\\bookscatalog\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C840955C-429B-412F-A58B-18F23DCE12C2}|BooksCatalog.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CRUD.cs",
+              "DocumentMoniker": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\CRUD.cs",
+              "RelativeDocumentMoniker": "CRUD.cs",
+              "ToolTip": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\CRUD.cs",
+              "RelativeToolTip": "CRUD.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwAMAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:40:38.828Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Book.cs",
+              "RelativeDocumentMoniker": "Book.cs",
+              "ToolTip": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Book.cs",
+              "RelativeToolTip": "Book.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:56:00.529Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Valentina\\Source\\Repos\\Xatila\\BooksCatalog\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Valentina\\Source\\Repos\\Xatila\\BooksCatalog\\Form1.Designer.cs",
+              "RelativeToolTip": "Form1.Designer.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAYwDsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:57:06.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:56:05.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Form1.cs",
+              "RelativeToolTip": "Form1.cs",
+              "ViewState": "AQIAAIQAAAAAAAAAAADwv5wAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:36:43.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Valentina\\source\\repos\\Xatila\\BooksCatalog\\Form1.cs [Design]",
+              "RelativeToolTip": "Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-09T12:36:40.306Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

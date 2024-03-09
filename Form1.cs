@@ -20,47 +20,15 @@ namespace DbTest
             InitializeComponent();
         }
 
-        private void dataGridViewBooks_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            try
-            {
-                IDBook = 0;
-                if (dataGridViewBooks.SelectedCells.Count > 0)
-                {
-                    IDBook = int.Parse(dataGridViewBooks.SelectedCells[0].Value.ToString());
-                    txtTitle.Text = dataGridViewBooks.SelectedCells[1].Value.ToString();
-                    txtDescription.Text = dataGridViewBooks.SelectedCells[2].Value.ToString();
-                    btnDelete.Enabled = true;
-                }
-                else
-                {
-                    btnDelete.Enabled = false;
-                }
-
-            }
-            catch { }
-
-        }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (IDBook != 0)
-            {
-                Book book = crud.GetByID(IDBook);
-                book.title = txtTitle.Text;
-                book.description = txtDescription.Text;
-
-                crud.Update(book);
-            }
-            else
-            {
-                Book book = new Book();
-                book.title = txtTitle.Text;
-                book.description = txtDescription.Text;
-                crud.Insert(ref book);
-            }
-
-
+           
+            Book book = new Book();
+            book.title = txtTitle.Text;
+            book.description = txtDescription.Text;
+            crud.Insert(ref book);
+        
             getBooks();
         }
         public void getBooks()
@@ -71,7 +39,11 @@ namespace DbTest
                 dataGridViewBooks.EndEdit();
                 dataGridViewBooks.Rows.Clear();
             }
-            
+
+            table.Columns.Add("ID", typeof(int));
+            table.Columns.Add("Title", typeof(string));
+            table.Columns.Add("Description", typeof(string));
+
             string conString = "server=localhost;uid=root;pwd=12qwas123;database=books;";
 
             MySqlConnection con = new MySqlConnection();
@@ -99,7 +71,14 @@ namespace DbTest
             if (IDBook != 0)
             {
                 Book book = crud.GetByID(IDBook);
-                crud.Delete(book);
+
+                if(book != null)
+                {
+                    crud.Delete(book);
+                }
+
+
+                IDBook = 0;
                 getBooks();
             }
         }
@@ -147,6 +126,46 @@ namespace DbTest
         private void txtDescription_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridViewBooks_CellMouseClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                IDBook = 0;
+
+                if (e.RowIndex >= 0) // Verifica si se hizo clic en una celda válida (no en los encabezados)
+                {
+                    DataGridViewRow selectedRow = dataGridViewBooks.Rows[e.RowIndex];
+                    IDBook = Convert.ToInt32(selectedRow.Cells[0].Value);
+                    txtTitle.Text = Convert.ToString(selectedRow.Cells[1].Value);
+                    txtDescription.Text = Convert.ToString(selectedRow.Cells[2].Value);
+                    btnDelete.Enabled = true;
+                }
+                else
+                {
+                    btnDelete.Enabled = false;
+                }
+            }
+            catch { }
+        }
+
+        private void saveEdit_Click(object sender, EventArgs e)
+        {
+            if (IDBook != 0)
+            {
+                Book book = crud.GetByID(IDBook);
+
+                if (book != null)
+                {
+                    book.title = txtTitle.Text;
+                    book.description = txtDescription.Text;
+
+                    crud.Update(book);
+                }
+                getBooks();
+
+            }
         }
     }
 }
